@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Oxygen:wght@300&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    padding: 1rem 0;
+    position: relative;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+header nav {
+    max-width: 768px;
+}
+
+form label {
+    font-size: 16px;
+}
+
+form input {
+    max-height: 10px;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+.container {
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.tabela_container {
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+thead {
+    width: 100%;
+    display: flex;
+    font-size: 12px;
+}
+
+thead tr {
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+}
+
+table th {
+    text-align: center;
+}
+
+tbody {
+    display: flex;
+    font-size: 10px;
+}
+
+tbody tr {
+    display: flex;
+}
+
+.colunaTabela td {
+    max-width: 200px;
+}
+
+.colunaTabela td ul {
+    list-style: none;
+}
+
+form div {
+    margin: 0 auto;
+    max-width: 300px;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.btn_decodificar_container {
+    width: 100%;
+}
+
+.btn_container {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_form {
+    font-size: 12px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    background: green;
+    padding: 0.5rem 1rem;
+}
+
+.btn_decodificar {
+    width: 70px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 10px;
+}
+
+.btn_logout {
+    cursor: pointer;
+    color: #fff;
+    right: 10px;
+    background: red;
+    position: absolute;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    form label {
+        font-size: 20px;
+    }
+
+    thead {
+        font-size: 20px;
+    }
+
+    tbody {
+        justify-content: space-between;
+        font-size: 16px;
+    }
+
+    tbody tr {
+        justify-content: space-around;
+        display: flex;
+        width: 100%;
+    }
+
+    .btn_form {
+        font-size: 16px;
+    }
+
+    .btn_decodificar {
+        font-size: 16px;
+    }
+
+    .colunaTabela td {
+        width: 100%;
+    }
+
+    .btn_logout {
+        right: 300px;
+    }
+}
+
