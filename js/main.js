@@ -246,7 +246,7 @@
             })
             .then(res => {
                 if(res.ok) {
-                    window.location = "http://127.0.0.1:5500/index.html";
+                    window.location = "http://127.0.0.1:5500/main.html";
                     return res.statusText;
                 } else {
                     return res.statusText;
@@ -274,7 +274,7 @@
                 credentials: "include",
             });
     
-            window.location = "http://127.0.0.1:5500/login.html";
+            window.location = "http://127.0.0.1:5500/index.html";
     
     
         });
