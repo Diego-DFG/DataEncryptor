@@ -19,18 +19,18 @@
     
             e.preventDefault();
     
-            fetch('http://localhost:3000/encriptar', {
+            fetch('https://dataencryptor.herokuapp.com/encryptar', {
                 method: "POST",
                 credentials: "include",
                 headers: {
-                    "Origin": "http://127.0.0.1:5500",
+                    "Origin": "https://diego-dfg.github.io/DataEncryptor",
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify(objInputs),
             })
             .then(res => {
                 if(res.ok) {
-                    window.location = "http://127.0.0.1:5500/";
+                    window.location = "https://diego-dfg.github.io/DataEncryptor/#/main.html";
                     return res.statusText;
                 } else {
                     return res.statusText;
@@ -46,11 +46,11 @@
     function renderizaTabela() {
     
     
-        fetch('http://localhost:3000', {
+        fetch('https://dataencryptor.herokuapp.com', {
             method: "GET",
             credentials: "include",
             headers: {
-                "Origin": "http://127.0.0.1:5500",
+                "Origin": "https://diego-dfg.github.io/DataEncryptor",
                 "Content-Type": "application/json",
             },
         })
@@ -173,11 +173,11 @@
     
                         let dadosDes = [];
                 
-                        fetch(`http://localhost:3000/decriptar/${iddado}`, {
+                        fetch(`https://dataencryptor.herokuapp.com/${iddado}`, {
                             method: "GET",
                             credentials: "include",
                             headers: {
-                                "Origin": "http://127.0.0.1:5500",
+                                "Origin": "https://diego-dfg.github.io/DataEncryptor",
                                 "Content-Type": "application/json",
                             },
                         })
@@ -235,18 +235,18 @@
     
             e.preventDefault();
     
-            fetch('http://localhost:3000/auth', {
+            fetch('https://dataencryptor.herokuapp.com/auth', {
                 method: "POST",
                 credentials: "include",
                 headers: {
-                    "Origin": "http://127.0.0.1:5500",
+                    "Origin": "https://diego-dfg.github.io/DataEncryptor",
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify(objInputs),
             })
             .then(res => {
                 if(res.ok) {
-                    window.location = "http://127.0.0.1:5500/main.html";
+                    window.location = "https://diego-dfg.github.io/DataEncryptor/main.html";
                     return res.statusText;
                 } else {
                     return res.statusText;
@@ -269,12 +269,12 @@
     
             e.preventDefault();
     
-            fetch("http://localhost:3000/logout", {
+            fetch("https://dataencryptor.herokuapp.com/logout", {
                 method: "DELETE",
                 credentials: "include",
             });
     
-            window.location = "http://127.0.0.1:5500/index.html";
+            window.location = "https://diego-dfg.github.io/DataEncryptor/index.html";
     
     
         });
