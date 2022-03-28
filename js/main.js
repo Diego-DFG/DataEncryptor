@@ -19,7 +19,7 @@
     
             e.preventDefault();
     
-            fetch('https://dataencryptor.herokuapp.com/encryptar', {
+            fetch('https://dataencryptor.herokuapp.com/encriptar', {
                 method: "POST",
                 credentials: "include",
                 headers: {
