@@ -173,7 +173,7 @@
     
                         let dadosDes = [];
                 
-                        fetch(`https://dataencryptor.herokuapp.com/${iddado}`, {
+                        fetch(`https://dataencryptor.herokuapp.com/decriptar/${iddado}`, {
                             method: "GET",
                             credentials: "include",
                             headers: {
